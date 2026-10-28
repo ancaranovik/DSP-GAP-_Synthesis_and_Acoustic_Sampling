@@ -1,0 +1,1 @@
+candidate_id,repetition,seed,anchor_event_id,anchor_subject_id,background_event_id,background_subject_id,attempt_index,controls_path,accepted,rejection_reason,audio_path,target_duration_ms,achieved_duration_ms,target_f50_hz,achieved_f50_hz

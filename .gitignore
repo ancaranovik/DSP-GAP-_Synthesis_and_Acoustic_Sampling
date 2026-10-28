@@ -1,0 +1,60 @@
+# Public source allowlist; local notes/proposals/environments stay on this machine.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/requirements-dsp.txt
+!/dsp/
+
+/dsp/*
+!/dsp/notebooks/
+!/dsp/scripts/
+!/dsp/templates/
+!/dsp/data/
+!/dsp/outputs/
+/dsp/notebooks/*
+!/dsp/notebooks/*.ipynb
+/dsp/scripts/*
+!/dsp/scripts/download_biocas2022.py
+/dsp/templates/*
+!/dsp/templates/*.csv
+/dsp/data/*
+!/dsp/data/raw/
+!/dsp/data/manifests/
+!/dsp/data/processed/
+!/dsp/data/synthetic/
+/dsp/outputs/*
+!/dsp/outputs/reports/
+!/dsp/outputs/figures/
+!/dsp/outputs/runs/
+
+# Dữ liệu thật và kết quả không tự đưa vào repository công khai.
+# Giữ .gitkeep để bảo toàn cấu trúc thư mục rỗng.
+dsp/data/raw/*
+!dsp/data/raw/.gitkeep
+dsp/data/manifests/*
+!dsp/data/manifests/.gitkeep
+dsp/data/processed/*
+!dsp/data/processed/.gitkeep
+dsp/data/synthetic/*
+!dsp/data/synthetic/.gitkeep
+dsp/outputs/reports/*
+!dsp/outputs/reports/.gitkeep
+dsp/outputs/figures/*
+!dsp/outputs/figures/.gitkeep
+dsp/outputs/runs/*
+!dsp/outputs/runs/.gitkeep
+
+# Tài liệu tải về và bản sao trung gian đã có từ trước.
+tmp/
+
+# Credentials and caches must never be published.
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+**/__pycache__/
+**/*.py[cod]
+**/.ipynb_checkpoints/
+**/.DS_Store
+**/Thumbs.db
